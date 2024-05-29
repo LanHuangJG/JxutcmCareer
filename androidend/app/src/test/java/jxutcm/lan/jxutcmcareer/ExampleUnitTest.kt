@@ -1,4 +1,4 @@
-package jxutcm.lan.myandroidapp
+package jxutcm.lan.jxutcmcareer
 
 import org.junit.Test
 

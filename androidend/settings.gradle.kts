@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MyAndroidApp"
+rootProject.name = "JxutcmCareer"
 include(":app")

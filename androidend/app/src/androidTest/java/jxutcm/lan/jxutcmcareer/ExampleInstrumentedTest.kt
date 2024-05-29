@@ -1,4 +1,4 @@
-package jxutcm.lan.myandroidapp
+package jxutcm.lan.jxutcmcareer
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("jxutcm.lan.myandroidapp", appContext.packageName)
+        assertEquals("jxutcm.lan.jxutcmcareer", appContext.packageName)
     }
 }

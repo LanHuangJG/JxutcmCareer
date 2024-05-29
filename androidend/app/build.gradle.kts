@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "jxutcm.lan.myandroidapp"
+    namespace = "jxutcm.lan.jxutcmcareer"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "jxutcm.lan.myandroidapp"
+        applicationId = "jxutcm.lan.jxutcmcareer"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
