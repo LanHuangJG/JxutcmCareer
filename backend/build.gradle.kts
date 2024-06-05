@@ -5,6 +5,7 @@ plugins {
     id("io.spring.dependency-management") version "1.1.5"
     kotlin("jvm") version "1.9.24"
     kotlin("plugin.spring") version "1.9.24"
+    kotlin("kapt") version "1.9.23"
 }
 
 group = "lan.jing"
@@ -19,6 +20,15 @@ repositories {
 }
 
 dependencies {
+    implementation("com.github.xiaoymin:knife4j-openapi3-jakarta-spring-boot-starter:4.5.0")
+    kapt("com.mybatis-flex:mybatis-flex-processor:1.9.1")
+    implementation("org.springframework.boot:spring-boot-starter-mail")
+    implementation("com.mybatis-flex:mybatis-flex-kotlin-extensions:1.0.9")
+    implementation("io.jsonwebtoken:jjwt-api:0.12.5")
+    runtimeOnly("io.jsonwebtoken:jjwt-impl:0.12.5")
+    runtimeOnly("io.jsonwebtoken:jjwt-jackson:0.12.5")
+    implementation("com.mybatis-flex:mybatis-flex-spring-boot3-starter:1.9.1")
+    implementation("com.zaxxer:HikariCP")
     implementation("org.springframework.boot:spring-boot-starter-amqp")
     implementation("org.springframework.boot:spring-boot-starter-data-redis")
     implementation("org.springframework.boot:spring-boot-starter-security")
