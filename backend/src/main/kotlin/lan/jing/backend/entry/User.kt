@@ -1,7 +1,9 @@
 package lan.jing.backend.entry
 
+import com.github.xiaoymin.knife4j.annotations.Ignore
 import com.mybatisflex.annotation.Id
 import com.mybatisflex.annotation.KeyType
+import com.mybatisflex.annotation.RelationOneToMany
 import java.time.LocalDateTime
 
 data class User(
@@ -11,5 +13,11 @@ data class User(
     var password:String? = null,
     var email:String? = null,
     var createTime:LocalDateTime? = null,
-    var updateTime:LocalDateTime? = null
+    var updateTime:LocalDateTime? = null,
+    @Ignore
+    @RelationOneToMany(selfField = "id", targetField = "uid")
+    var roles: List<Role>? = null,
+    @Ignore
+    @RelationOneToMany(selfField = "id", targetField = "uid")
+    var permissions: List<Permission>? = null
 )
